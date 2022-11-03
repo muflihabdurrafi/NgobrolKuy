@@ -20,7 +20,6 @@ import java.io.IOException;
 public class ProfilePicActivity extends AppCompatActivity {
     private ImageView image, edit;
     private TextView lewati, lanjut;
-    private Uri imageUri;
     private final int GALLERY_REQUEST_CODE=1;
     private static final String TAG = RegisterActivity.class.getCanonicalName();
 
@@ -46,7 +45,6 @@ public class ProfilePicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProfilePicActivity.this, SettingActivity.class);
-                intent.putExtra("key_image", imageUri.toString());
                 startActivity(intent);
             }
         });
