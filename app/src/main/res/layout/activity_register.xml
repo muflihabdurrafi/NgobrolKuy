@@ -153,9 +153,11 @@
         android:layout_marginTop="32dp">
 
         <TextView
+            android:id="@+id/registerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
+            android:clickable="true"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
             android:textSize="12pt"
@@ -168,6 +170,8 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/sudahBtn"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
